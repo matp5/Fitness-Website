@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 10px;
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Header, yes you can, first page */
+
+.header {
+  max-width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../images/bgFirst.png');
+  
+  /* background: linear-gradient(175deg, rgba(0,0,200,0) 20%, rgba(0,0,200,0) 82%, rgba(0,0,200,0.5) 82%, rgba(0,0,200,0.5) 100%),
+              url('../images/bgFirst.png'); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 2em;
+  /* position: relative;
+  overflow: hidden; */
+}
+
+/* .header:before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: #fd634e;
+  opacity: .3;
+  bottom: -100px;
+  left: -100px;
+  right: -10px;
+  height: 170px;
+  transform: rotate(-2deg);
+} */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  list-style-type: none;
+  padding: 1em;
+}
+
+.header__menu li a {
+  font-family: 'Nunito', sans-serif;
+  padding: 1em;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+  font-family: "Avenir Next Rounded Std - Med";
+  font-size: 1.4em;
+}
+
+.header h1 {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  font-size: 3vw;
+  font-weight: 200;
+}
+
+.header h1:after {
+  content: '/';
+  font-weight: 800;
+  color: #a2ca28;
+}
+
+.header p {
+  position: absolute;
+  letter-spacing: 3px;
+  bottom: 17%;
+  left: 18%;
+  font-size: 1.2vw;
+  font-weight: 200;
+}
+
+.header p:after {
+  content: '/';
+  font-weight: 800;
+  color: #fd634e;
+}
+
+/* Resources, training, connect, communicate */
+
+.resources {
+  background-color: #a2ca28;
+}
+.info article {
+  padding: 6em;
+  width: 22%;
+}
+
+.info article img {
+  height: 4em;
+}
+
+.info article h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 54.1px;
+}
+
+.info article p {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.98px;
+}
