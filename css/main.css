@@ -401,28 +401,47 @@ header {
 }
 
 .footer img {
-  padding: 0 2em 0 0;
+  padding: 0 2em 1em 0;
 }
 
 .contact {
   display: flex;
+  justify-content: flex-end;
   width: 100%;
   margin-bottom: 150px;
 }
 
 .contact input {
-  height: 49px;
+  height: 45px;
   border-radius: 2px;
   background-color: #ffffff;
+  margin-right: 5px;
+  padding: 1em;
+  color: #83969f;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .contact input:nth-child(1) {
   width: 201px;
-
+  
 }
 
 .contact input:nth-child(2) {
   width: 340px;
+}
+
+.contact button {
+  width: 182px;
+  height: 45px;
+  border-radius: 3px;
+  background-color: #a2ca28;
+  color: white;
+  font-family: "Proxima Nova - Semibold";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 @media (max-width: 900px) {
