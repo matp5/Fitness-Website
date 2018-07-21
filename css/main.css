@@ -439,9 +439,7 @@ header {
   background-color: #a2ca28;
   color: white;
   font-family: "Proxima Nova - Semibold";
-  font-size: 15px;
   font-weight: 400;
-  line-height: 30px;
 }
 
 @media (max-width: 900px) {
@@ -449,6 +447,16 @@ header {
     width: 50%;
   }
 
+  .contact input:nth-child(1) {
+    width: 101px;
+  }
+  .contact input:nth-child(2) {
+    width: 240px;
+  }
+
+  .contact button {
+    width: 122px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -474,4 +482,14 @@ header {
     width: 70%;
   }
 
+  .contact input:nth-child(1) {
+    width: 101px;
+  }
+  .contact input:nth-child(2) {
+    width: 140px;
+  }
+
+  .contact button {
+    width: 82px;
+  }
 }
