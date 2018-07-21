@@ -1,0 +1,82 @@
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+#input-toggle {
+	display: none;
+}
+
+.navigation-toggle { 
+	display:none; 
+	margin: 10px 20px 0 0; 
+	position:absolute; 
+	right:15px; 
+	cursor:pointer; 
+}
+
+.navigation-toggle span { 
+	background-color: white; 
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); 
+	display:block; 
+	height:2px; 
+	width:18px; 
+	margin:4px auto; 
+}
+
+nav ul {
+	list-style:none; 
+	margin-right: 50px;
+	display: block;	
+}
+
+nav ul li {
+	display: inline-block;		
+	text-align: center;
+	margin-right: 4em;
+}	
+
+nav ul li a {
+	font:bold 14px/60px 'Nunito', sans-serif;
+	color:white;
+	display: block;
+	text-decoration: none;
+	
+}
+
+
+@media screen and (max-width:780px) {
+	.navigation-toggle {
+		display:block;
+	}
+	
+	nav ul {
+		overflow: hidden;				
+		max-height:0;
+		transition:max-height 0.35s ease 0s;
+		-webkit-transition:max-height 0.35s ease 0s;
+		-moz-transition:max-height 0.35s ease 0s;
+	}
+	
+	nav #input-toggle:checked + ul {
+		max-height:700px;
+	}
+	
+	nav ul li {
+		border:0;
+		width: 150%;
+		max-width: 150%;
+		min-width:0;
+		padding: 0;
+	}
+
+	nav ul li a {
+		padding: 0;
+	}
+	
+	nav ul li a {
+		display: block;
+		text-align: center;
+	}
+	
+}	

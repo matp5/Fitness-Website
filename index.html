@@ -5,27 +5,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,700i,800" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/hamburger.css">
     </head>
     <body>
         <section class='header'>
             <header>  
                 <a href='' class='header__logo'><img src='images/logo.png'></a>
-                <nav class='header__nav'>
-                    <ul class='header__menu'>
-                        <li><a href=''>ABOUT</a></li>
-                        <li><a href=''>HOW IT WORKS</a></li>
-                        <li><a href=''>SERVICES</a></li>
-                        <li><a href=''>FAQ</a></li>
-                        <li><a href=''>CONTACT</a></li>
+                <!-- <nav class='nav'>
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle"/>
+                    <ul class='menu'>
+                        <a href=''>ABOUT</a>
+                        <a href=''>HOW IT WORKS</a>
+                        <a href=''>SERVICES</a>
+                        <a href=''>FAQ</a>
+                        <a href=''>CONTACT</a>
                     </ul>
-                </nav>
+                </nav> -->
+
+                <nav class="page-navigation clearfix">		
+                        <label class="navigation-toggle" for="input-toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    
+                        <input type="checkbox" id="input-toggle">	
+                        <ul class="menu">
+                            <li><a href="">ABOUT</a></li>
+                            <li><a href="">HOW IT WORKS</a></li>
+                            <li><a href="">SERVICES</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
             </header>
             
             <h1>FITNESS IN A CAN </h1>
             <p>YES YOU CAN</p>
         </section>
 
-        <section>
+        <section class='info'>
             <div class='container resources'>
                     <article>
                         <img src="./images/resources.png" >
@@ -34,7 +55,7 @@
                             habitant morbi tristique senectus et netus et malesuada fames ac 
                             turpis egestas. Fusce malesuada ipsum augue, quis viverra orci ultricies 
                             at. Etiam commodo purus nisi. Aenean vestibulum mi in mi consequat, vel semper orci efficitur.</p>
-                            <a href='#'>Explore more &#8594</a>
+                            <a href='#'>Explore more &#8594;</a>
                     </article>
                     <article>
                         <img src="./images/trainingfunding.png" >
@@ -65,7 +86,7 @@
             </div>
         </section>
 
-        <section>
+        <section class='info'>
                 <div class='container'>
                     <article class= 'blocks'>
                         <div class='blocks__text'>
@@ -90,9 +111,9 @@
 
                     <article class= 'blocks blocks2'>
                             <div class='blocks__image blocks__bg2'>
-                                    <div class='blocks__users blocks__users2'>
-                                        <p>Products USed <span>(658)</span></p>
-                                        <img src="images/orangeShape.png">
+                                    <div class='blocks__users '>
+                                        <p class='blocks__users--par'>Products USed (658)</p>
+                                        <img class='blocks__users--img' src="images/orangeShape.png">
                                     </div>
                                 </div>
 
@@ -121,10 +142,107 @@
                                 <div class='blocks__image blocks__image2'>
                                     <div class='blocks__users2'>
                                         <h1>24TH AUGUST</h1>
-                                        <h1>HEALTH &#38; FITNESS</h1>
+                                        <figure>
+                                            <h1>HEALTH &#38; FITNESS</h1>
+                                            <img src="images/pin.png">
+                                        </figure>
                                     </div>
                                 </div>
                             </article>
+                        
+                        <article class='blocks'>
+                            <div class='blocks__text text3'>
+                                <h1>TRACK YOUR</h1>
+                                <div class='text3__icon'>
+                                    <h2>LIFESTYLE</h2>
+                                    <img src='images/humanIcon.png' height='65px' width='65px'>
+                                </div>
+                                <p>Cras et dolor libero. Aenean luctus accumsan enim quis finibus. 
+                                    Sed id mattis leo.
+                                    Maecenas lacus justo, fermentum eu pulvinar quis, posuere vel velit.
+                                </p>
+                             </div>
+                             <div class='blocks__text--green'>
+                                 <div class='text__green'>
+                                     <h1>SUMMER OF FUN</h1>
+                                     <p>Donec porttitor augue sit amet est posuere facilisis. Pellentesque 
+                                             habitant morbi tristique senectus et netus et malesuada fames ac.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="blocks__fruits">
+                                <img src="images/grape.png" height="auto" width='67%'>
+                                <img src="images/ananas.png" height="auto" width='33%'>
+                        </article>
+
+                        <article class="blocks">
+                            <div class='blocks__text text3 involved'>
+                                <h1>TRACK YOUR</h1>
+                                <div class='text3__icon'>
+                                    <h2>GET INVOLVED IN YOURSELF</h2>
+                                    <img src='images/strawb.png' height="65px">
+                                </div>
+                                <p>Cras et dolor libero. Vestibulum feugiat tellus efficitur tempor varius. Pellentesque luctus viverra iaculis. 
+                                    Donec consequat efficitur enim non dignissim.Aenean luctus accumsan enim quis finibus. 
+                                    Sed id mattis leo. Nulla nulla turpis, porttitor augue sit amet est posuere
+                                    condimentum eu felis eu, consequat volutpat orci.
+                                    Sed id mattis leo. Nulla nulla turpis,
+                                    Maecenas lacus justo, fermentum eu pulvinar quis, posuere vel velit.
+                                </p>
+                            </div>
+
+                            <div class="blocks__text text3 eating">
+                                <h1>IMPROVE YOUR</h1>
+                                <div class='text3__icon'>
+                                    <h2>EATING HABITS</h2>
+                                    <img src='images/shape.png' height="65px">
+                                </div>
+                                <p>Craermentum eu Cras et dolor libero. Vestibulum feugiat tellus efficitur tempor varius. Pellentesque luctus viverra iaculis. 
+                                        Donec consequat efficitur enimpat orci.
+                                        Sed id mattis leo. Nulla nulla turpis,
+                                        Maecenas pulvinar quis, posuere vel velit.
+                                </p>
+                            </div>
+                        </article>
+                </div>
+            </section>
+
+            <section class='standingMan'>
+                <div class="container standing">
+                        <h1>We launch leaders with big ideas</h1>
+                        <p>Cras et dolor libero. Aenean condimentum eu felis eu, consequat volutpat orci. 
+                            luctus accumsan enim quis finibus. Donec porttitor augue sit amet est posuere.
+                            Sed id mattis leo.</p>
+                </div>
+            </section>
+
+            <section>
+                <div class="container footer">
+                    <article>
+                        <h2>Resources</h2>
+                        <p>Donec porttitor augue sit amet est posuere facilisis. Pellentesque 
+                            habitant morbi tristique senectus et netus et malesuada fames ac 
+                            turpis egestas. Aenean vestibulum mi in mi consequat, vel semper orci efficitur.</p>
+                    </article>
+                    <article>
+                        <h2>About us</h2>
+                        <p>Cras et dolor libero. Aenean condimentum eu felis eu, consequat volutpat orci. 
+                            luctus accumsan enim quis finibus. Donec porttitor augue sit amet est posuere.
+                            Sed id mattis leo.</p>
+                    </article>
+                    <article>
+                        <h2>Stay in touch</h2>
+                        <img src="images/fb.png">
+                        <img src="images/twitter.png">
+                        <img src="images/in.png">
+                        <img src="images/yt.png">
+                    </article>
+                    <div class='contact'>
+                        <input type="text">
+                        <input type="text">
+                        <button>Join Newsletter &#10148;   </button>
+                    </div>
                 </div>
             </section>
 
