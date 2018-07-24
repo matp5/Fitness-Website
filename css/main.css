@@ -25,8 +25,9 @@ body {
   max-width: 100%;
   height: 100vh;
   width: 100vw;
-    background: linear-gradient(178deg, rgba(255,127,80, 0) 15%, rgba(255,127,80, 0) 90%, rgba(255,127,80, 0.3) 90%, rgba(255,127,80, 0.3) 100%),
-              url('../images/bgFirst.png');
+  background: linear-gradient(178deg, rgba(255,127,80, 0) 15%, rgba(255,127,80, 0) 90%, rgba(255,127,80, 0.3) 90%, rgba(255,127,80, 0.3) 100%),
+              url('../images/bgFirst.jpg');
+              
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 2em;
@@ -345,7 +346,7 @@ header {
     linear-gradient(to bottom left, transparent 49%,#000 50.5%)  0% calc(100% - 50px)/50% 40px,
     linear-gradient(to bottom right, transparent 49%,#000 50.5%)  100% calc(100% - 50px)/50% 40px,
     linear-gradient(#000,#000) bottom/100% 50px,
-    url(https://i.imgur.com/C0Wqb0o.jpg) center/cover;
+    url('../images/layer-8.jpg') center/cover;
   background-repeat:no-repeat;
 }
 
@@ -424,16 +425,16 @@ header {
 }
 
 .contact input:nth-child(1) {
-  width: 201px;
+  width: 141px;
   
 }
 
 .contact input:nth-child(2) {
-  width: 340px;
+  width: 200px;
 }
 
 .contact button {
-  width: 182px;
+  width: 160px;
   height: 45px;
   border-radius: 3px;
   background-color: #a2ca28;
@@ -460,6 +461,10 @@ header {
 }
 
 @media (max-width: 768px) {
+  .header {
+    background-size: cover;
+    background-position: center;
+  }
   .resources article {
     width: 100%;
   }
@@ -482,14 +487,18 @@ header {
     width: 70%;
   }
 
+  .contact {
+    justify-content: center;
+  }
+
   .contact input:nth-child(1) {
     width: 101px;
   }
   .contact input:nth-child(2) {
-    width: 140px;
+    width: 122px;
   }
 
   .contact button {
-    width: 82px;
+    min-width: 102px;
   }
 }
